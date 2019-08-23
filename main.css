@@ -40,48 +40,26 @@
     color: black;
     position: relative;
     align-content: space-between;
-    padding: 2em;
-    
-     
-    
+    padding: 30px 2em ;
+  
  }
 
- .nav a:before {
+ .nav a::before {
    content: "";
    display: block;
    width: 0;
    height: 3px;
-   margin-top:30px;
    background:#eb5866;
    position: absolute;
-   top: 0;
+   top:0;
+   left:0;
    transition: all 0.3s;
 
  }
- .nav a:hover:before {
+ .nav a:hover::before {
    width: 100%;
-   margin-top:30px;
  }
 
- .nav__how:hover:before {
-   width: 100%;
-   margin-top:30px;
-   margin-left: 130px;
- }
-
- .nav__feat:hover:before {
-   width: 100%;
-   margin-top:30px;
-   margin-left: 330px;
- }
-
- .nav__pics:hover:before {
-   width: 100%;
-   margin-top:30px;
-   margin-left: 480px;
- }
-
- 
 .input{
     
     display: flex;
@@ -118,14 +96,12 @@
 }
 
 .input__joinin:hover{
-   border:4px solid;
+    border:4px solid;
     border-radius: 25px;
     font-size:8pt;
     border-color: #eb5866; 
     background:transparent;
-    color:black;
-   
-   
+    color:black;   
 }
 
 
@@ -168,11 +144,48 @@
 .landingtop{
   height: 700px;
   width: 100%;
-   background-image: url(./background.png);
+  background-image: url(./background.png);
 }
 
-@media screen and (max-width: 700px){
+.howitworks__title{
+   font-size: 40pt;
+   font-family: fjalla One;
+   display: flex;
+   justify-content: center; 
+   position: relative;
+}
 
+.howitworks__title:before{
+   content: "";
+   display: block;
+   width: 0;
+   height: 3px;
+   margin-top:500px;
+   background:#eb5866;
+   position: absolute;
+   bottom: 0;
+   transition: all 0.3s;
+}
+
+.howitworks__title:hover:before{
+  width:300px;
+
+}
+
+
+.howitworks__description{
+   display: flex;
+   justify-content: center;
+   margin-top: -30px;
+   font-size: 20pt;
+   letter-spacing: 2px;
+}
+
+
+@media screen and (max-width: 700px){
+  .header{
+   background: #eb5866;
+  }
 
 }
  
