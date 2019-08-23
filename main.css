@@ -12,6 +12,8 @@
 
 .header__logo{
    
+    display:flex;
+    align-content: flex-start;
     margin-left: 40px;
     margin-top: 20px;
     
@@ -19,7 +21,7 @@
 
  .header__logoimg{
    justify-content: flex-start;
-    width: 70%;
+    width: 75%;
     
 
  }
@@ -83,7 +85,6 @@
 .input{
     
     display: flex;
-    width:30%;
     justify-content: flex-end;
     margin-right: 30px;
 
@@ -96,9 +97,13 @@
     border-radius: 25px;
     font-size:8pt;
     border-color: #eb5866;
-
-    
+    background: transparent;  
  }
+ .input__signup:hover{
+   background-color: #eb5866;
+   border: none; 
+   color: white;
+}
 
  .input__joinin{
    margin-top: 20px;
@@ -110,8 +115,19 @@
    background-color: #eb5866;
    border: none; 
    color: white;
-
 }
+
+.input__joinin:hover{
+   border:4px solid;
+    border-radius: 25px;
+    font-size:8pt;
+    border-color: #eb5866; 
+    background:transparent;
+    color:black;
+   
+   
+}
+
 
 .banner{
 
@@ -124,10 +140,35 @@
 .banner__welcome{
    
    margin-top: 200px;
-   font-size: 40pt;
-   
-   
+   font-size: 40pt; 
+}
 
+.banner_cta{
+   margin-top: 20px;
+   width: 300px;
+   height: 60px;
+   border-radius: 40px;
+   margin-top:-200px;
+   font-size:20pt;
+   background-color: #eb5866;
+   border: none; 
+   color: white;
+ }
+
+ .banner_cta:hover{
+   
+   border:5px solid;
+   border-radius: 40px;
+   border-color: #eb5866; 
+   background: transparent;
+   color:black;
+
+ }
+
+.landingtop{
+  height: 700px;
+  width: 100%;
+   background-image: url(./background.png);
 }
 
 @media screen and (max-width: 700px){
