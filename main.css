@@ -4,26 +4,31 @@
     align-items: center;
     font-family:Roboto slab; 
 
+}
 
-
+.body{
+  margin:0px;
 }
 
 .header__logo{
+   
     margin-left: 40px;
     margin-top: 20px;
     
  }
 
  .header__logoimg{
+   justify-content: flex-start;
     width: 70%;
     
 
  }
 
  .nav{
-
+    width:80%;
     margin-top: 20px;
-
+    align-content: space-around;
+    
  }
 
  .nav a{
@@ -31,16 +36,56 @@
     margin-left: 0px;
     text-decoration: none;
     color: black;
-    padding: 20px;
+    position: relative;
+    align-content: space-between;
+    padding: 2em;
+    
+     
     
  }
 
+ .nav a:before {
+   content: "";
+   display: block;
+   width: 0;
+   height: 3px;
+   margin-top:30px;
+   background:#eb5866;
+   position: absolute;
+   top: 0;
+   transition: all 0.3s;
 
+ }
+ .nav a:hover:before {
+   width: 100%;
+   margin-top:30px;
+ }
+
+ .nav__how:hover:before {
+   width: 100%;
+   margin-top:30px;
+   margin-left: 130px;
+ }
+
+ .nav__feat:hover:before {
+   width: 100%;
+   margin-top:30px;
+   margin-left: 330px;
+ }
+
+ .nav__pics:hover:before {
+   width: 100%;
+   margin-top:30px;
+   margin-left: 480px;
+ }
+
+ 
 .input{
     
     display: flex;
-    width:50%;
+    width:30%;
     justify-content: flex-end;
+    margin-right: 30px;
 
 }
  .input__signup{
@@ -65,11 +110,28 @@
    background-color: #eb5866;
    border: none; 
    color: white;
+
 }
 
-@media(width: 700px){
+.banner{
 
+   flex-direction: column;
+   align-content: flex-start;
+   margin-left: 180px;
    
+   
+}
+.banner__welcome{
+   
+   margin-top: 200px;
+   font-size: 40pt;
+   
+   
+
+}
+
+@media screen and (max-width: 700px){
+
 
 }
  
