@@ -380,9 +380,13 @@ html{
 }
 
 .tabsft__promos{
-   
-widows: 50%;
+   margin:0;
+  width:100%;
 
+}
+
+.tabsft{
+   width:100%;
 }
     
 
@@ -476,9 +480,12 @@ widows: 50%;
 }
 
 .pics{
-   display: flex;
+   
    flex-direction: row;
+   width: 100%;
 }
+
+
 
 .pics__container{
 
@@ -491,7 +498,7 @@ widows: 50%;
 
 .pics__imgs{
 
-   width:50%;
+   width:20%;
    margin-left: 8%;
 }
 
@@ -693,6 +700,7 @@ input[type=range] {
 
    .body{
       overflow: hidden;
+      white-space:normal; 
    }
 
   .nav{
@@ -764,9 +772,14 @@ input[type=range] {
 
    flex-direction: column;
    justify-content: center;
+   align-items: center;
+   width: 100%;
+   margin-right: 10%;
    
-   
-   
+  }
+
+  .btn__tabs{
+     margin-right: 10%;
   }
 
   .tabsft__content{
@@ -781,6 +794,25 @@ input[type=range] {
      justify-items: center;
 
   }
+
+
+  .pics__container{
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+  }
+
+  .pics__text{
+
+   flex-direction: column
+}
+
+.pics__imgs{
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   margin-right: 10%;
+}
 
 
   
