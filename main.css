@@ -1,8 +1,23 @@
+@font-face {
+   font-family: "Roboto Slab";
+   src: url("./fonts/RobotoSlab-Regular.ttf");
+
+   font-family: "Roboto Slab";
+   src: url("./fonts/RobotoSlab-Bold.ttf");
+
+   font-family: "Fjalla One";
+   src: url("./fonts/FjallaOne-Regular.ttf");
+
+ }
+
+
+
 .header{
     display: flex;
     flex-direction: row;
     align-items: center;  
 }
+
 
 html{
    scroll-behavior: smooth;
