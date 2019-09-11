@@ -452,14 +452,61 @@ html{
    width:100%;
    justify-content: center;
    align-items: center;
-   margin-bottom: 60%;
+  
 }
 
 .range__text{
- 
+
    font-size: 20pt;
 
 }
+
+.pics{
+   display: flex;
+   flex-direction: row;
+}
+
+.pics__container{
+
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+}
+
+.pics__imgs{
+
+   width:50%;
+   margin-left: 8%;
+}
+
+.pics__text{
+
+   font-size: 20pt;
+   padding:1em;
+}
+
+.names{
+
+   font-family: fjalla One;
+   font-size: 60pt;
+   
+}
+
+.pics__next{
+
+   cursor: pointer;
+   text-decoration: none;
+   color: gray;
+   width:50%;
+}
+
+.pics__next:hover{
+
+   color:#ff5d5d;
+}
+
 
 
 
@@ -557,6 +604,11 @@ input[type=range] {
  
 
 @media screen and (max-width: 700px){
+
+   .body{
+      overflow: hidden;
+   }
+
   .nav{
    display: none;
    background-image: url("./anvorguesa.png");
@@ -564,7 +616,7 @@ input[type=range] {
   
 
   .banner_cta{
-     display: none;
+     
   }
 
   .header__logo{
@@ -586,6 +638,53 @@ input[type=range] {
      margin-right: 0;
  
   }
+
+  .cards{
+
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width:100%;
+    
+  }
+
+  .cards__titles{
+   margin-top: 5%;
+   width:100%;
+  }
+
+  .cards__img{
+     width:100%;
+  }
+
+  .cards__h1{
+      font-size: 30pt;
+  }
+
+  .tabsft__item{
+
+   flex-direction: column;
+   justify-content: center;
+   padding: 2em;
+   
+   
+  }
+
+  .tabsft__content{
+   margin-left: 0%;
+   justify-items: center;
+   padding: 2em;
+   margin-right: 20%;
+  }
+
+  .tabsft__text{
+     text-justify: center;
+     justify-items: center;
+
+  }
+
+  
+
 
 }
  
