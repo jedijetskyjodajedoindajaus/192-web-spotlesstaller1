@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=e, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel = "stylesheet" href="./main.css" >
-    <title>Spotless</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./main.css">
+  <title>Spotless</title>
 </head>
 
 <body>
- <section class="landingtop" > 
-   <header class="header">
-    <div class="header__logo">
-      <a href=""> <img class="header__logoimg"src="./spts.png" alt=""> </a> 
-     
-    </div>
+  <section class="landingtop">
+    <header class="header">
+      <div class="header__logo">
+        <a href=""> <img class="header__logoimg" src="./spts.png" alt=""> </a>
 
-    <div class="nav">
+      </div>
+
+      <div class="nav">
         <a href="#" class="nav__item">Home</a>
         <a href="#hiw" class="nav__item">How it Works</a>
         <a href="#ft" class="nav__item">Features</a>
         <a href="#" class="nav__item">Pics</a>
-    </div>
+      </div>
 
-    <div class="input">
-       <a href="#"> <button class="input__signup btnFont" type="button">Sign up</button> </a>
+      <div class="input">
+        <a href="#"> <button class="input__signup btnFont" type="button">Sign up</button> </a>
         <button class="input__joinin btnFont" type="button">Join in</button>
-    </div> 
+      </div>
     </header>
 
-    
+
 
     <section class="banner">
       <p class="banner__welcome">
@@ -37,7 +38,7 @@
         <br> Your home had never
         <br> been so clean.
       </p>
-        <button class="banner_cta btnFont" type="button">Order now!</button>       
+      <button class="banner_cta btnFont" type="button">Order now!</button>
     </section>
 
     <div class="scrollIndicator">
@@ -48,48 +49,86 @@
     </div>
   </section>
 
-<section class="howitworks" id="hiw">
-  <p class="howitworks__title titles"> How it works</p>
-  <p class="howitworks__description">We are company from Area 51, who rents aliens to clean your home.</p>
-    
-  <div class="cards">
-    <div class="cards__titles" >
-       <p class="cards__h1"> Sign Up</p>
-        <img class="cards__img" src="./card1.png" alt=""> 
-           <div class="cards__text">
-           <p class="texts"> Create your Spotless account and select your ubication.
-                Our Aliens were created to make your life easier.  
-           </p>
+  <section class="howitworks" id="hiw">
+    <p class="howitworks__title titles"> How it works</p>
+    <p class="howitworks__description">We are company from Area 51, who rents aliens to clean your home.</p>
+
+    <div class="cards">
+      <div class="cards__titles">
+        <p class="cards__h1"> Sign Up</p>
+        <img class="cards__img" src="./card1.png" alt="">
+        <div class="cards__text">
+          <p class="texts"> Create your Spotless account and select your ubication.
+            Our Aliens were created to make your life easier.
+          </p>
         </div>
-     </div>
+      </div>
 
-    <div class="cards__titles" >
-      <p class="cards__h1"> Choose your perfect
-       alien </p>
-      <img class="cards__img" src="./card2.png" alt="">
-          <div class="cards__text">
-              <p class="texts"> We have many aliens for you, find the perfect one out 
-                according with your needs. 
-              </p>
-          </div>
+      <div class="cards__titles">
+        <p class="cards__h1"> Choose your perfect
+          alien </p>
+        <img class="cards__img" src="./card2.png" alt="">
+        <div class="cards__text">
+          <p class="texts"> We have many aliens for you, find the perfect one out
+            according with your needs.
+          </p>
+        </div>
+      </div>
+
+      <div class="cards__titles">
+        <p class="cards__h1"> Wait for him</p>
+        <img class="cards__img" src="./card3.png" alt="">
+        <div class="cards__text">
+          <p class="texts"> We`ll send you your alien in a box, beware when you open it,
+            our alien could be angry.
+          </p>
+        </div>
+      </div>
     </div>
-
-    <div class="cards__titles" >
-       <p class="cards__h1"> Wait for him</p>
-         <img class="cards__img" src="./card3.png" alt="">
-              <div class="cards__text">
-                  <p class="texts"> We`ll send you your alien in a box, beware when you open it,
-                     our alien could be angry.
-                  </p>
-              </div>
-     </div>
-   </div>
   </section>
 
-  <section class="features" id="ft">
-      <p class="features__title titles"> Features</p>
+  <section class="tabsft" id="ft">
+    <p class="tabsft__title titles"> Features</p>
+    <nav class="tabsft__nav">
+      <button class="tabsft__btn btnline">Controller</button>
+      <button class="tabsft__btn btnline">On sale!</button>
+    </nav>
+    <section class="tabsft__content">
+      <div class="tabsft__item">
+        <div class="tabsft__promos">
+          <img src="./promo1.png" alt="">
+        </div>
+        <div class="tabsft__text texts">
+          <p class="tabsft__subtitle titles"> The controllers were made for you </p>
+          <p> This arcadia machine was programmed
+            to modify the alien`s features. Now, you`re
+            able to change their colors and skills.
+          </p>
+          <div class="btn__tabs">
+            <a href="#"> <button class="tabsft__cta btnFont" type="button">Order now!</button> </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabsft__item">
+        <div class="tabsft__promos">
+          <img src="./promo2.png" alt="">
+        </div>
+        <div class="tabsft__text texts">
+          <p class="tabsft__subtitle titles"> About our sales </p>
+          <p> We release sales every week, so if you want to get them
+            keep in touch with our website.
+          </p>
+          <div class="btn__tabs">
+            <a href="#"> <button class="tabsft__cta btnFont" type="button">Order now!</button> </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </section>
 
+    <script src="./scripts/main.js"></script>
 
 </body>
+
 </html>

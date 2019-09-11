@@ -10,7 +10,6 @@ html{
 }
 
 .texts{
-
    font-family: Roboto Slab;
 }
 
@@ -25,6 +24,7 @@ html{
   margin:0px;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .header__logo{
@@ -224,9 +224,7 @@ html{
 
 .howitworks{
    align-items: center;
-   width: 100%;
-   
-   
+   width: 100%; 
 }
 
 
@@ -284,24 +282,146 @@ html{
    background-color: rgba(100, 100, 100, 90%);
    height: 85%;
    color: aliceblue;
-   top:-10%;
-   
-
+   top:-10%;  
 }
 
 .cards__text:hover{
    opacity: 100;
-   top:0
-   
+   top:0 
 }
-
 
 .cards__titles:hover{
     transform: scale(1.1);
     transition: transform 0.2s ease-in-out;
+}
+
+.tabsft__title{
+   line-height: 1.3em;
+   margin: 0;
 
 }
 
+.tabsft__nav{
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    
+     
+}
+
+.tabsft__btn{
+   font-family: Roboto Slab;
+   font-weight: bold;
+   margin: 0px 10px;
+   background: none;
+   border: none;
+   padding: 4px 6px;
+   outline: none;
+   font-size: 16pt;
+   padding: 1.3em; 
+   
+}
+
+.btnline{
+   cursor: pointer;
+   position: relative;
+
+}
+
+.btnline::after{
+   content: '';
+   height: 4px;
+   background:#d82364;
+   position: absolute;
+   bottom: 0px;
+   width: 100%;
+   left: 0px;
+   transition: transform .3s ease;
+   transform: scale(0, 1);
+}
+
+.btnline:hover::after{
+   transform: scale(1, 1);
+}
+
+.btnline:focus::after{
+   transform: scale(1,1);
+}
+
+.btnline--active::after{
+   transform: scale(1,1);
+}
+
+
+.tabsft__content{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-content: space-between;
+   align-items: center;
+   
+}
+
+.tabsft__item{
+   display: none;
+}
+
+.tabsft__item--active{
+   display: block;
+
+}
+    
+
+
+.tabsft__text{
+   font-size: 18pt;
+   display: flex;
+   align-content: center;
+   flex-direction: column;
+   padding: 2em;
+   width: 100%;
+   height: 100%;
+   
+}
+.tabsft__subtitle{
+    font-size: 30pt;
+}
+
+.btn__tabs{
+     display: flex;
+     align-self: flex-end;
+     width:60%;
+     padding: 15%;
+     
+     
+}
+.tabsft__cta{
+      margin-top: 40%;
+      width: 300px;
+      height: 60px;
+      border-radius: 40px;
+      margin-top:-200px;
+      font-size:20pt;
+      background-color:#d82364;
+      border: none; 
+      color:white;
+      cursor: pointer;
+      align-items: flex-end;
+    }
+
+.tabsft__cta:hover{
+      
+      border:5px solid;
+      border-radius: 40px;
+      border-color: #d82364; 
+      background: transparent;
+      color:#d82364;
+   
+    }
+   
+
+
+ 
 
 @media screen and (max-width: 700px){
   .nav{
