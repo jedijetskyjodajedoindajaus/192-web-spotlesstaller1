@@ -295,6 +295,11 @@ html{
     transition: transform 0.2s ease-in-out;
 }
 
+.tabsft{
+   width: 100%;
+   
+}
+
 .tabsft__title{
    line-height: 1.8em;
    margin: 0;
@@ -319,6 +324,7 @@ html{
    outline: none;
    font-size: 16pt;
    padding: 1.3em; 
+   color: gray;
    
 }
 
@@ -368,6 +374,14 @@ html{
 
 .tabsft__item--active{
    display: flex;
+   flex-direction: row;
+   width: 100%;
+
+}
+
+.tabsft__promos{
+   
+widows: 50%;
 
 }
     
@@ -379,7 +393,7 @@ html{
    flex-direction: column;
    padding: 2em;
    width: 100%;
-   height: 100%;
+  
    
 }
 .tabsft__subtitle{
@@ -508,10 +522,6 @@ html{
 }
 
 
-
-
-
-
 input[type=range] {
    -webkit-appearance: none;
    width: 50%;
@@ -597,11 +607,87 @@ input[type=range] {
  input[type=range]:focus::-ms-fill-upper {
    background: rgba(255, 26, 77, 0.71);
  }
- 
+  
+ .newsletter{
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color:white;
+
+}
+
+.newsletter__content{
+   padding: 3em;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.button--newsletter{
+   
+      width: 300px;
+      height: 60px;
+      border-radius: 40px;
+      font-size:20pt;
+      background-color:#d82364;
+      border: none; 
+      color:white;
+      cursor: pointer;
+      align-items: flex-end;
+}
+
+.newsletter__text{
+   font-size: 1.5em;
+   text-align: center;
+}
+
+.inputs{
+   padding: .8em 4em;
+   border-radius: 5px;
+   border: .5px dashed;
+   
+}
+
+.newsletter__inputs{
+   padding: 2em;
+}
+
+
+.footer{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #5be0bc;
+
+   
+}
+
+.footer__a{
+   padding: 2em 2em 2em 2em;
+   text-decoration: none;
+   font-family: Nunito Sans;
+   color: black;
+   transition: all 0.5s ease;
+
+}
+
+
+
+.footer__contact{
+   display: flex;
+   flex-direction: row;
+}
+
+.footer__p{
+   padding: 0em 2em;
    
 
+}
 
- 
 
 @media screen and (max-width: 700px){
 
@@ -612,6 +698,14 @@ input[type=range] {
   .nav{
    display: none;
    background-image: url("./anvorguesa.png");
+  }
+
+  .input{
+     display: none;
+  }
+
+  .header__logo{
+     margin-bottom: 3%;
   }
   
 
@@ -643,9 +737,10 @@ input[type=range] {
 
     flex-direction: column;
     align-items: center;
-    margin: 0;
-    width:100%;
     
+    margin-left: 5%;
+    width:90%;
+ 
   }
 
   .cards__titles{
@@ -661,11 +756,15 @@ input[type=range] {
       font-size: 30pt;
   }
 
+  .tabsft{
+     width: 100%;
+   
+  }
   .tabsft__item{
 
    flex-direction: column;
    justify-content: center;
-   padding: 2em;
+   
    
    
   }
@@ -678,10 +777,11 @@ input[type=range] {
   }
 
   .tabsft__text{
-     text-justify: center;
+   
      justify-items: center;
 
   }
+
 
   
 
