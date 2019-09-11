@@ -23,6 +23,15 @@ function handleLoad() {
     }
     buttons.forEach(iterateButtons);
 
+    
+    var range = document.querySelector('.input__range');
+    var specifications = document.querySelector('.range__img');
+    range.value = 0;
+    function handleRange () {
+        specifications.style.opacity = range.value / 100;
+    }
+    range.addEventListener('input', handleRange);
+
    
 }
 
