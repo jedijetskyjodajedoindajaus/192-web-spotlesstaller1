@@ -737,14 +737,17 @@ input[type=range]:focus::-ms-fill-upper {
         font-size: 30pt;
     }
     .tabsft {
-        width: 100%;
+        box-sizing: content-box;
+        width: 90%;
+    }
+    .tabsft__subtitle {
+        font-size: 28pt;
     }
     .tabsft__item {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin-right: 10%;
     }
     .tabsft__promos {
         width: 100%;
@@ -764,6 +767,7 @@ input[type=range]:focus::-ms-fill-upper {
         justify-content: center;
         align-items: center;
         box-sizing: content-box;
+        overflow-x: hidden;
     }
     .tabsft__content {
         margin-left: 20px;
