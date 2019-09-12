@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./main.css">
+  <style>
+    img{
+      max-width: 100%;
+    }
+  </style>
   <title>Spotless</title>
 </head>
 
@@ -14,20 +19,22 @@
     <header class="header">
       <div class="header__logo">
         <a href=""> <img class="header__logoimg" src="./spts.png" alt=""> </a>
-
       </div>
 
-      <div class="nav">
+      <div class="header__nav">
         <a href="#" class="nav__item">Home</a>
         <a href="#hiw" class="nav__item">How it Works</a>
         <a href="#ft" class="nav__item">Features</a>
         <a href="#pics" class="nav__item">Pics</a>
       </div>
-
+      <button class="header__burguer">
+            <img class="header__burguerimg" src="./anvorguesa.png" alt="">
+        </button>
       <div class="input">
         <a href="#"> <button class="input__signup btnFont" type="button">Sign up</button> </a>
         <button class="input__joinin btnFont" type="button">Join in</button>
       </div>
+
     </header>
 
 
@@ -151,6 +158,7 @@
       <img class="pics__aliens" src="./alien1.png">
     </div>
     <div class="pics__text texts">
+        <a class="pics__nextnew btnFont "> Next Alien</a>
       <p>You can check de profile of each alien to know some details about him.</p>
       <div class="pics__names">
         <p class="names" id="p1">¡They're wating you for a name!</p>
@@ -163,7 +171,7 @@
 
     <section class="newsletter">
       <div class="newsletter__content">
-        <h2 class="newsletter__text titles">Suscribe to keep in touch woth us!</h2>
+        <h2 class="newsletter__text titles">Subscribe to keep in touch woth us!</h2>
         <div class="newsletter__inputs">
           <input type="text" placeholder="Your email adress" class="inputs">
           <input type="text" placeholder="Your name" class="inputs">
